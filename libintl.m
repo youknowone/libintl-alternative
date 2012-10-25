@@ -47,6 +47,9 @@ char *libintl_dngettext (const char *__domainname,
 }
 
 char *libintl_textdomain (const char *__domainname) {
+    if (__domainname == NULL) {
+        return (char *)__boundDomain.UTF8String;
+    }
     __setBoundDomain([NSString stringWithUTF8String:__domainname]);
     return (char *)__domainname;
 }
