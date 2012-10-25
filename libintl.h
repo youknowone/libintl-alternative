@@ -25,6 +25,11 @@
  *  On build time:
  *      1. Bundle your <domain>.strings localization files in <locale>.lproj
  *      2. Oops, no .strings files? Here is po_to_strings.rb in repository!
+ *          1. Put your po files in po/ directory.
+ *              like: po/ko.po
+ *          2. Run po_to_strings.rb
+ *          3. Get result in po/ directory.
+ *              like: po/ko.strings
  *  On run time:
  *      1. Be lazy and see your gettext-based code is localized very well!
  *
