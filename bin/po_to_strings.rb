@@ -1,4 +1,17 @@
 #!/usr/bin/env ruby -wKU
+#
+# = .po to .strings converter
+#
+# Written by Eugene Pimenov <eugene@libc.st>.
+#
+# This file is distributed under the terms of the 2-clause BSD license.
+# You can freely distribute/modify this source.
+#
+# This file is included in X-Chat Aqua project
+#
+# Posted by request from Jeong YunWon.
+#
+# Original document: https://gist.github.com/3958225
 
 require "strscan"
 require 'iconv'
