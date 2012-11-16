@@ -140,7 +140,7 @@ extern char *libintl_dcgettext (const char *__domainname, const char *__msgid,
 static inline char *dcgettext (const char *__domainname, const char *__msgid,
                                int __category) {
     return libintl_dcgettext(__domainname, __msgid, __category);
-};
+}
 
 /*!
  *  @brief ngettext implementation
