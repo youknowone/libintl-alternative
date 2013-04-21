@@ -78,14 +78,17 @@
  *  NOTE: Only system locale is supported.
  */
 
+#ifndef __LIBINTL_ALTERNATIVE__
+#define __LIBINTL_ALTERNATIVE__
+
 #include <xlocale.h>
 
 /*!
  *  @define
- *  @brief Fake gettext version 0.18.1
+ *  @brief Fake gettext version 0.18.2
  */
 #ifndef LIBINTL_VERSION
-#define LIBINTL_VERSION 0x001201
+#define LIBINTL_VERSION 0x001202
 #endif
 extern int libintl_version;
 
@@ -265,4 +268,6 @@ extern void libintl_set_relocation_prefix (const char *orig_prefix,
 
 #ifdef __cplusplus
 }
+#endif
+
 #endif
